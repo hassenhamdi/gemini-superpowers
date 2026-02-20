@@ -1,0 +1,5 @@
+description = "Brainstorm a solution for the current task or specific context."
+prompt = """
+I need to brainstorm a solution for: {{args}}.
+Please activate the 'brainstorming' skill and guide me through a structured design exploration.
+"""

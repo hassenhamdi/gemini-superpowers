@@ -1,0 +1,8 @@
+description = "Draft a technical implementation plan for the current task."
+prompt = """
+I need to create a plan for: {{args}}.
+Current context:
+!{ls -R}
+
+Please activate the 'writing-plans' skill and help me draft a step-by-step technical plan with verification criteria.
+"""

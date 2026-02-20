@@ -1,0 +1,5 @@
+description = "Execute a technical plan using TDD and rigid protocols."
+prompt = """
+I am ready to execute the plan: {{args}}.
+Please activate the 'executing-plans' skill and guide me through the implementation phase, ensuring TDD is used for all changes.
+"""
