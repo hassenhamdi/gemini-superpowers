@@ -15,5 +15,5 @@ We're excited to share our plans for Gemini Superpowers.
 
 ## Suggestions?
 
-If you have any suggestions or feedback, please [open a GitHub issue](https://github.com/YOUR_USERNAME/gemini-superpowers/issues/new).
+If you have any suggestions or feedback, please [open a GitHub issue](https://github.com/hassenhamdi/gemini-superpowers/issues/new).
 We're always looking for ways to improve Gemini Superpowers.

@@ -7,7 +7,7 @@ This project is built on the core philosophy of rigid protocols, contextual prec
 ## Getting Started
 
 1.  **Fork the repository** on GitHub.
-2.  **Clone your fork** locally: `git clone https://github.com/YOUR_USERNAME/gemini-superpowers.git`
+2.  **Clone your fork** locally: `git clone https://github.com/hassenhamdi/gemini-superpowers.git`
 3.  **Link the extension** to your Gemini CLI: `gemini extensions link .`
 
 ## Development Workflow

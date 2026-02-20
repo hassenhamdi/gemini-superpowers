@@ -10,14 +10,14 @@ The first place to look for help is in the [README.md](README.md) and the [Gemin
 
 ### Open a GitHub Issue
 
-If you've found a bug or have a feature request, please [open a GitHub issue](https://github.com/YOUR_USERNAME/gemini-superpowers/issues/new).
+If you've found a bug or have a feature request, please [open a GitHub issue](https://github.com/hassenhamdi/gemini-superpowers/issues/new).
 
 Please follow the issue template to help us understand your problem.
 
 ### Ask the Community
 
 If you have questions about how to use Gemini Superpowers, you can ask the community on:
-*   [GitHub Discussions](https://github.com/YOUR_USERNAME/gemini-superpowers/discussions)
+*   [GitHub Discussions](https://github.com/hassenhamdi/gemini-superpowers/discussions)
 *   [Discord](https://discord.gg/YOUR_DISCORD_LINK)
 
 ## Expected Response Times
