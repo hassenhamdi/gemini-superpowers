@@ -34,3 +34,14 @@ Failure to use the prefix will result in immediate tool call validation errors a
 2. **Planning:** Use `/write-plan` to create atomic implementation plans.
 3. **Execution:** Use `/execute-plan` to implement features with TDD.
 4. **Debugging:** Automatically triggered or manually activated when issues arise.
+
+## 🧠 Project Memory & Architecture
+
+### Architectural Patterns
+- **Persona Shells:** Sub-agents (`agents/`) are defined as shells that accept dynamic system prompts. This allows the main agent to inject specialized context (e.g., "You are a Python Expert") at runtime.
+- **Interactive Decisions:** Fixed CLI outputs are replaced with the `ask_user` tool. This enforces human-in-the-loop confirmation for critical steps (Plan approval, Option selection).
+- **Session Persistence:** Hooks (`hooks/hooks.json`) are configured to trigger on `startup|resume|clear|compact`. This ensures "Superpowers" context is re-injected even after context clearing or session resumption.
+
+### Documentation Policy
+- **Local Memory:** This file (`GEMINI.md`) contains **strictly project-specific** context, architecture, and patterns.
+- **Global Memory:** Generic Gemini CLI constraints, facts, and user preferences are stored in the global memory (accessible via `save_memory`).

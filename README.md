@@ -17,10 +17,11 @@ Gemini Superpowers enhances your Gemini CLI experience by providing a structured
 
 ## 🛠️ Key Workflows
 
-1.  **Brainstorming:** Use `/brainstorm` to explore architectural decisions and design patterns before writing code.
-2.  **Planning:** Use `/write-plan` to create atomic, verifiable implementation plans.
-3.  **Execution:** Use `/execute-plan` to implement features with TDD and continuous verification.
-4.  **Debugging:** Automatically triggered or manually activated when issues arise, following a systematic root-cause analysis protocol.
+1.  **Brainstorming:** Use `/brainstorm` to explore architectural decisions. Now features **interactive choice selection** using the `ask_user` tool.
+2.  **Planning:** Use `/write-plan` to create atomic implementation plans. Includes interactive handoffs for seamless execution.
+3.  **Execution:** Use `/execute-plan` to implement features with TDD. Leverages **Sub-Agent Personas** for specialized tasks (Implementer, Reviewer).
+4.  **Debugging:** Automatically triggered on errors.
+5.  **Session Persistence:** The `SessionStart` hook now maintains context across `startup`, `resume`, and `clear` events.
 
 ## 📂 Directory Structure
 
