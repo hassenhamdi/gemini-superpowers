@@ -1,25 +1,95 @@
 ---
 name: brainstorming
-description: Use when a design or idea requires higher confidence, risk reduction, or formal review.
+description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
 ---
 
-# Brainstorming (Design Exploration)
+# Brainstorming Ideas Into Designs
 
-Use this skill BEFORE any creative or constructive work.
+## Overview
+
+Help turn ideas into fully formed designs and specs through natural collaborative dialogue.
+
+Start by understanding the current project context, then ask questions one at a time to refine the idea. Once you understand what you're building, present the design and get user approval.
+
+<HARD-GATE>
+Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until you have presented a design and the user has approved it. This applies to EVERY project regardless of perceived simplicity.
+</HARD-GATE>
+
+## Anti-Pattern: "This Is Too Simple To Need A Design"
+
+Every project goes through this process. A todo list, a single-function utility, a config change — all of them. "Simple" projects are where unexamined assumptions cause the most wasted work. The design can be short (a few sentences for truly simple projects), but you MUST present it and get approval.
+
+## Checklist
+
+You MUST create a task for each of these items and complete them in order:
+
+1. **Explore project context** — check files, docs, recent commits
+2. **Ask clarifying questions** — one at a time, understand purpose/constraints/success criteria
+3. **Propose 2-3 approaches** — with trade-offs and your recommendation
+4. **Present design** — in sections scaled to their complexity, get user approval after each section
+5. **Write design doc** — save to `docs/plans/YYYY-MM-DD-<topic>-design.md` and commit
+6. **Transition to implementation** — invoke writing-plans skill to create implementation plan
+
+## Process Flow
+
+```dot
+digraph brainstorming {
+    "Explore project context" [shape=box];
+    "Ask clarifying questions" [shape=box];
+    "Propose 2-3 approaches" [shape=box];
+    "Present design sections" [shape=box];
+    "User approves design?" [shape=diamond];
+    "Write design doc" [shape=box];
+    "Invoke writing-plans skill" [shape=doublecircle];
+
+    "Explore project context" -> "Ask clarifying questions";
+    "Ask clarifying questions" -> "Propose 2-3 approaches";
+    "Propose 2-3 approaches" -> "Present design sections";
+    "Present design sections" -> "User approves design?";
+    "User approves design?" -> "Present design sections" [label="no, revise"];
+    "User approves design?" -> "Write design doc" [label="yes"];
+    "Write design doc" -> "Invoke writing-plans skill";
+}
+```
+
+**The terminal state is invoking writing-plans.** Do NOT invoke frontend-design, mcp-builder, or any other implementation skill. The ONLY skill you invoke after brainstorming is writing-plans.
 
 ## The Process
 
-1. **Clarify Constraints:** Identify what MUST be true and what MUST NOT happen.
-2. **Divergent Thinking:** Generate 3+ distinct approaches (not just variations of one).
-3. **Convergent Thinking:** Evaluate approaches against constraints and trade-offs.
-4. **Select & Refine:** Pick the strongest approach and bulletproof it.
+**Understanding the idea:**
+- Check out the current project state first (files, docs, recent commits)
+- Use the `ask_user` tool to clarify the idea. 
+- **Efficiency Rule**: You may ask up to 3 related clarifying questions in a single `ask_user` call to respect the user's time, but keep them focused on one logical area (e.g., "Architecture & Data Flow" or "User Interface").
+- Prefer `type: 'choice'` for fixed options and `type: 'yesno'` for confirmations.
+- Focus on understanding: purpose, constraints, success criteria.
 
-## Mandatory Rules
-- **No Premature Implementation:** Do not write code until the brainstorm is concluded.
-- **Risk Identification:** Explicitly state the biggest risk for each approach.
-- **Conflict Resolution:** If approaches clash, define the tie-breaking priority.
+**Exploring approaches:**
+- Propose 2-3 different approaches with trade-offs.
+- **Selection Loop**: Use `ask_user` with `type: 'choice'` to present the approaches and have the user select their preferred direction.
+- Lead with your recommended option and explain why.
 
-## When to Use
-- Starting a new feature.
-- Refactoring complex logic.
-- Solving ambiguous bugs.
+**Presenting the design:**
+- Once you believe you understand what you're building, present the design
+- Scale each section to its complexity: a few sentences if straightforward, up to 200-300 words if nuanced
+- Ask after each section whether it looks right so far
+- Cover: architecture, components, data flow, error handling, testing
+- Be ready to go back and clarify if something doesn't make sense
+
+## After the Design
+
+**Documentation:**
+- Write the validated design to `docs/plans/YYYY-MM-DD-<topic>-design.md`
+- Commit the design document to git
+
+**Implementation:**
+- Invoke the writing-plans skill to create a detailed implementation plan
+- Do NOT invoke any other skill. writing-plans is the next step.
+
+## Key Principles
+
+- **One question at a time** - Don't overwhelm with multiple questions
+- **Multiple choice preferred** - Easier to answer than open-ended when possible
+- **YAGNI ruthlessly** - Remove unnecessary features from all designs
+- **Explore alternatives** - Always propose 2-3 approaches before settling
+- **Incremental validation** - Present design, get approval before moving on
+- **Be flexible** - Go back and clarify when something doesn't make sense

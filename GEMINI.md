@@ -18,6 +18,17 @@ To enable these superpowers in your Gemini CLI:
 gemini extensions link .
 ```
 
+## 🛠️ Tool Usage Protocols
+
+### CRITICAL: MCP Prefixing
+All Model Context Protocol (MCP) tools MUST be called with their server prefix.
+- **github:** Use `github__` prefix (e.g., `github__create_or_update_file`, `github__get_file_contents`)
+- **pencil:** Use `pencil__` prefix (e.g., `pencil__batch_design`, `pencil__get_editor_state`)
+
+**INCORRECT:** `create_or_update_file`, `batch_design`, `get_file_contents`
+
+Failure to use the prefix will result in immediate tool call validation errors and subagent crashes. This applies to the main agent and all subagents (Implementer, Reviewers, etc.).
+
 ## Key Workflows
 1. **Brainstorming:** Use `/brainstorm` to explore architectural decisions.
 2. **Planning:** Use `/write-plan` to create atomic implementation plans.

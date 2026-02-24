@@ -2,12 +2,12 @@
   "hooks": {
     "SessionStart": [
       {
-        "matcher": "SessionStart",
+        "matcher": "startup|resume|clear|compact",
         "hooks": [
           {
             "name": "superpowers-session-start",
             "type": "command",
-            "command": "hooks/session-start.sh"
+            "command": "${extensionPath}/hooks/session-start.sh"
           }
         ]
       }

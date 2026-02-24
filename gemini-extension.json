@@ -1,10 +1,32 @@
 {
   "name": "gemini-superpowers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "High-performance engineering protocols for Gemini CLI: TDD, Brainstorming, Systematic Debugging, and more.",
   "publisher": "gemini-cli-community",
   "engines": {
     "gemini": "^1.0.0"
   },
-  "contextFileName": "GEMINI.md"
+  "contextFileName": "GEMINI.md",
+  "excludeTools": [
+    "pencil__batch_design",
+    "pencil__batch_get",
+    "pencil__get_editor_state",
+    "pencil__snapshot_layout",
+    "pencil__get_screenshot",
+    "pencil__get_variables",
+    "pencil__set_variables",
+    "pencil__find_empty_space_on_canvas",
+    "pencil__search_all_unique_properties",
+    "pencil__replace_all_matching_properties",
+    "pencil__open_document",
+    "pencil__get_guidelines",
+    "pencil__get_style_guide_tags",
+    "pencil__get_style_guide"
+  ],
+  "agents": [
+    "agents/implementer.md",
+    "agents/code-reviewer.md",
+    "agents/spec-reviewer.md",
+    "agents/code-quality-reviewer.md"
+  ]
 }

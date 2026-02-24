@@ -1,5 +1,11 @@
-description = "Brainstorm a solution for the current task or specific context."
+description = "Brainstorm Ideas Into Designs. MUST use before any creative work. Explores user intent, requirements and design before implementation."
+usage = "/brainstorm [idea or goal]"
 prompt = """
 I need to brainstorm a solution for: {{args}}.
-Please activate the 'brainstorming' skill and guide me through a structured design exploration.
+
+<HARD-GATE>
+Do NOT invoke any implementation skill, write any code, scaffold any project, or take any implementation action until you have presented a design and the user has approved it. This applies to EVERY project regardless of perceived simplicity.
+</HARD-GATE>
+
+Please activate the 'brainstorming' skill and guide me through a structured design exploration, asking questions one at a time.
 """
