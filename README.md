@@ -42,6 +42,10 @@ gemini extensions link .
 *   [Gemini CLI Documentation](https://geminicli.com/docs/)
 *   [Superpowers Project](https://github.com/obra/superpowers/)
 
+## 👥 Maintainers
+
+- **Hassen Hamdi** ([@hassenhamdi](https://github.com/hassenhamdi))
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
