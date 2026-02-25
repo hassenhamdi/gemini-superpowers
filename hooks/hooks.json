@@ -7,7 +7,7 @@
           {
             "name": "superpowers-session-start",
             "type": "command",
-            "command": "${extensionPath}/hooks/session-start.sh"
+            "command": "${extensionPath}${/}hooks${/}session-start.sh"
           }
         ]
       }

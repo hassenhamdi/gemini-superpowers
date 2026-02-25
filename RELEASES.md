@@ -4,7 +4,15 @@ We're excited to share our releases for Gemini Superpowers.
 
 ## Latest Release
 
-*   **v1.0.0**
+*   **v1.1.0**
+
+## v1.1.0
+
+*   **Original Fidelity Alignment:** Updated `brainstorming` and `writing-plans` skills to strictly align with the engineering rigor of the original `obra/superpowers`.
+*   **Enhanced Session Persistence:** `SessionStart` hook now triggers on `startup|resume|clear|compact`.
+*   **Interactive Decision Making:** Integrated `ask_user` tool across all workflows for dynamic choice selection.
+*   **Agent Architecture Refactor:** Moved sub-agent prompts to a dedicated `agents/` directory for "Persona Shell" support.
+*   **GitHub-Ready:** Optimized manifest and documentation for seamless installation via GitHub repo link.
 
 ## v1.0.0
 
