@@ -32,7 +32,17 @@ Gemini Superpowers enhances your Gemini CLI experience by providing a structured
 
 ## ⚙️ Installation
 
-To enable these superpowers in your Gemini CLI:
+### From GitHub (Recommended)
+
+To install directly from this repository:
+
+```bash
+gemini extensions install https://github.com/hassenhamdi/gemini-superpowers
+```
+
+### Local Development
+
+If you've cloned the repository locally:
 
 ```bash
 gemini extensions link .
