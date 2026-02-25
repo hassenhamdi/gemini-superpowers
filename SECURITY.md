@@ -15,7 +15,7 @@ If you've found a security vulnerability in this project, please let us know rig
 
 **DO NOT OPEN A GITHUB ISSUE.**
 
-Instead, please send an email to hassenhamdi@example.com with a detailed description of the vulnerability and steps to reproduce it.
+Instead, please send an email to hassenhamdi12@gmail.com with a detailed description of the vulnerability and steps to reproduce it.
 
 We will acknowledge your report within 24 hours and provide an estimated timeline for a fix.
 
