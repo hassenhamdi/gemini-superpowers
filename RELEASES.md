@@ -4,9 +4,9 @@ We're excited to share our releases for Gemini Superpowers.
 
 ## Latest Release
 
-*   **v1.1.0**
+*   **v1.2.0**
 
-## v1.1.0
+## v1.2.0
 
 *   **Original Fidelity Alignment:** Updated `brainstorming` and `writing-plans` skills to strictly align with the engineering rigor of the original `obra/superpowers`.
 *   **Enhanced Session Persistence:** `SessionStart` hook now triggers on `startup|resume|clear|compact`.
