@@ -25,6 +25,10 @@ We follow a strict development lifecycle: **Research -> Strategy -> Execution ->
 *   **Contextual Precedence:** Instructions found in `GEMINI.md` files are foundational mandates.
 *   **Security First:** Never log, print, or commit secrets or sensitive credentials.
 
+## Governance
+
+This project follows a **Benevolent Dictator for Life (BDFL)** model. Hassen Hamdi has final decision-making authority over the project's direction and technical decisions.
+
 ## Pull Request Process
 
 1.  **Create a new branch** for your feature or bugfix: `git checkout -b your-feature-name`

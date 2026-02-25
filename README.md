@@ -57,6 +57,16 @@ gemini extensions link .
 
 - **Hassen Hamdi** ([@hassenhamdi](https://github.com/hassenhamdi))
 
+## 🗺️ Roadmap
+
+*   **Skill Creation:** Automate the process of creating and managing agent skills.
+*   **Skill Seekers:** Use vector search for semantic file search in skills.
+*   **Self-Healing:** Automatically detect and resolve common errors in agents.
+
+## 🙏 Acknowledgements
+
+Special thanks to the creators of the [Gemini CLI](https://geminicli.com/) and the original [Superpowers Project](https://github.com/obra/superpowers/).
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
